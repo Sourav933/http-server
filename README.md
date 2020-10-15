@@ -4,7 +4,7 @@
 
 # http-server: a command-line http server
 
-`http-server` is a simple, zero-configuration command-line http server.  It is powerful enough for production usage, but it's simple and hackable enough to be used for testing, local development, and learning.
+`http-server` is a simple, zero-configuration command-line http server.  It is the etnough poweful for the production usage, but it is simple and hackable enough to be used for testing, local development, and learning.
 
 ![Example of running http-server](https://github.com/http-party/http-server/raw/master/screenshots/public.png)
 
@@ -91,7 +91,7 @@ Using `npx` you can run the script without installing it first:
 ## Magic Files
 
 - `index.html` will be served as the default file to any directory requests.
-- `404.html` will be served if a file is not found. This can be used for Single-Page App (SPA) hosting to serve the entry page.
+- `404.html` will be served also if a file is not found. This can be used for Single-Page App (SPA) hosting to serves the entry page.
 
 ## Catch-all redirect
 
@@ -113,7 +113,7 @@ openssl req -newkey rsa:2048 -new -nodes -x509 -days 3650 -keyout key.pem -out c
 
 You will be prompted with a few questions after entering the command. Use `127.0.0.1` as value for `Common name` if you want to be able to install the certificate in your OS's root certificate store or browser so that it is trusted.
 
-This generates a cert-key pair and it will be valid for 3650 days (about 10 years).
+This generates a cert-key pair and it will be valid only for 3650 days (about 10 years).
 
 Then you need to run the server with `-S` for enabling SSL and `-C` for your certificate file.
 
@@ -121,7 +121,7 @@ Then you need to run the server with `-S` for enabling SSL and `-C` for your cer
 http-server -S -C cert.pem
 ```
 
-This is what should be output if successful:
+And This is what should be output if successful:
 
 ``` sh
 Starting up http-server, serving ./ through https
